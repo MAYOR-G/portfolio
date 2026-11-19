@@ -215,30 +215,47 @@ export const TerminalNavbar: React.FC<TerminalNavbarProps> = ({
           })}
         </nav>
 
-        <button
-          type="button"
-          onClick={() => {
-            playClick();
-            onOpenCli();
-          }}
-          className="term-btn sm secondary"
-          title="Open interactive CLI shell (shortcut: ~ or `)"
-          style={{
-            height: '32px',
-            padding: '0 12px',
-          }}
-        >
-          <span>&gt;_ TERMINAL</span>
-          <span
-            className="term-keycap"
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+          <a
+            href={PROFILE_DATA.cvUrl}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => playClick()}
+            className="term-btn sm"
+            title="View & Download CV"
             style={{
-              color: 'var(--color-secondary)',
-              borderColor: 'rgba(229, 160, 13, 0.45)',
+              height: '32px',
+              padding: '0 12px',
             }}
           >
-            ~
-          </span>
-        </button>
+            <span>DOWNLOAD CV ↗</span>
+          </a>
+
+          <button
+            type="button"
+            onClick={() => {
+              playClick();
+              onOpenCli();
+            }}
+            className="term-btn sm secondary"
+            title="Open interactive CLI shell (shortcut: ~ or `)"
+            style={{
+              height: '32px',
+              padding: '0 12px',
+            }}
+          >
+            <span>&gt;_ TERMINAL</span>
+            <span
+              className="term-keycap"
+              style={{
+                color: 'var(--color-secondary)',
+                borderColor: 'rgba(229, 160, 13, 0.45)',
+              }}
+            >
+              ~
+            </span>
+          </button>
+        </div>
       </div>
     </header>
   );

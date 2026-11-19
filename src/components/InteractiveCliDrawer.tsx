@@ -23,6 +23,7 @@ const QUICK_COMMANDS = [
   'projects',
   'skills',
   'research',
+  'cv',
   'theme amber',
   'theme cyan',
   'theme green',
@@ -105,6 +106,7 @@ export const InteractiveCliDrawer: React.FC<InteractiveCliDrawerProps> = ({
             <div><span style={{ color: 'var(--color-primary)' }}>skills</span> — Render ASCII capability telemetry</div>
             <div><span style={{ color: 'var(--color-primary)' }}>experience</span> — Display career log</div>
             <div><span style={{ color: 'var(--color-primary)' }}>research</span> — View Zenodo RAG publication</div>
+            <div><span style={{ color: 'var(--color-primary)' }}>cv / resume</span> — Open &amp; download latest CV (Google Drive)</div>
             <div><span style={{ color: 'var(--color-primary)' }}>contact</span> — Show direct comms channels</div>
             <div><span style={{ color: 'var(--color-primary)' }}>theme &lt;green|amber|cyan&gt;</span> — Switch CRT phosphor palette</div>
             <div><span style={{ color: 'var(--color-primary)' }}>sound &lt;on|off&gt;</span> — Toggle audio synthesizer</div>
@@ -262,6 +264,23 @@ export const InteractiveCliDrawer: React.FC<InteractiveCliDrawerProps> = ({
               DOI: {PUBLICATION_DATA.doi} · {PUBLICATION_DATA.venue}
             </div>
             <p style={{ marginTop: '4px' }}>{PUBLICATION_DATA.abstract}</p>
+          </div>
+        );
+        break;
+
+      case 'cv':
+      case 'resume':
+        playBeep(620, 'square', 0.06);
+        output = (
+          <div style={{ fontSize: '12px', lineHeight: '20px', color: 'var(--color-text-secondary)' }}>
+            <div style={{ color: 'var(--color-primary)', fontWeight: 700 }}>
+              Olugbenga Mayowa Emmanuel — ML &amp; AI Engineer CV
+            </div>
+            <div>
+              <a href={PROFILE_DATA.cvUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--color-secondary)' }}>
+                &gt; Download / View CV on Google Drive ↗
+              </a>
+            </div>
           </div>
         );
         break;

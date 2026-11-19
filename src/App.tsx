@@ -164,6 +164,14 @@ export const App: React.FC = () => {
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
                 <a
+                  href={PROFILE_DATA.cvUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: 'var(--color-secondary)', textDecoration: 'none', fontWeight: 600 }}
+                >
+                  CV ↗
+                </a>
+                <a
                   href={PROFILE_DATA.github}
                   target="_blank"
                   rel="noreferrer"

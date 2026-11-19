@@ -176,7 +176,7 @@ export const ContactPane: React.FC = () => {
                 flexWrap: 'wrap',
                 gap: '12px',
                 padding: '16px 0',
-                borderBottom: '1px solid var(--color-border-strong)',
+                borderBottom: '1px solid var(--color-border)',
               }}
             >
               <div>
@@ -192,6 +192,33 @@ export const ContactPane: React.FC = () => {
                 className="term-btn sm ghost"
               >
                 LinkedIn ↗
+              </a>
+            </div>
+
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: '12px',
+                padding: '16px 0',
+                borderBottom: '1px solid var(--color-border-strong)',
+              }}
+            >
+              <div>
+                <div style={{ fontSize: '11px', color: 'var(--color-text-dim)' }}>Curriculum Vitae (PDF)</div>
+                <div style={{ fontSize: '13.5px', fontWeight: 500, color: 'var(--color-text-primary)', marginTop: '2px' }}>
+                  Olugbenga Mayowa Emmanuel — ML/AI Engineer CV
+                </div>
+              </div>
+              <a
+                href={PROFILE_DATA.cvUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="term-btn sm"
+              >
+                Download CV ↗
               </a>
             </div>
           </div>

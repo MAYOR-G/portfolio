@@ -184,17 +184,27 @@ export const HeroPane: React.FC<HeroPaneProps> = ({
                 2
               </span>
             </button>
+            <a
+              href={PROFILE_DATA.cvUrl}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => playClick()}
+              className="term-btn lg secondary"
+              title="Open & Download CV (Google Drive)"
+            >
+              <span>DOWNLOAD CV ↗</span>
+            </a>
             <button
               type="button"
               onClick={() => {
                 playClick();
                 onOpenCli();
               }}
-              className="term-btn lg secondary"
+              className="term-btn lg ghost"
               title="Open Interactive Shell (Shortcut: ` or ~)"
             >
               <span>&gt;_ INTERACTIVE CLI</span>
-              <span className="term-keycap" style={{ color: 'var(--color-secondary)' }}>
+              <span className="term-keycap">
                 ~
               </span>
             </button>

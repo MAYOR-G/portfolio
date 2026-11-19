@@ -29,7 +29,8 @@ export const PROFILE_DATA = {
   github: 'https://github.com/MAYOR-G',
   githubUsername: 'MAYOR-G',
   linkedin: 'https://www.linkedin.com/in/mayowa-olugbenga-66a691254/',
-  portfolioUrl: 'https://mayor-g.github.io/',
+  portfolioUrl: 'https://portfolio-amber-xi-85.vercel.app/',
+  cvUrl: 'https://drive.google.com/file/d/1Xmp2BYpignZeIZVnTqrGY1fixV1YZ81a/view?usp=sharing',
   whatsappUrl: 'https://wa.me/2347057977236',
   bio: `Machine Learning Engineer, AI Engineer, and Mathematician with 3+ years of experience designing, building, and deploying practical AI systems. I combine a strong mathematical foundation with hands-on software engineering to build language models from scratch, retrieval-augmented generation (RAG) platforms, multimodal applications, and end-to-end machine learning pipelines—working across product, engineering, and design teams while mentoring engineers and coaching learners in applied AI.`,
 };
@@ -148,7 +149,7 @@ export const PROJECTS_DATA: Project[] = [
       { label: 'Framework', value: 'Pure PyTorch' },
     ],
     techStack: ['Python', 'PyTorch', 'BPE Tokenization', 'Multi-Head Attention', 'Transformers', 'Autoregressive Pretraining'],
-    githubUrl: '',
+    githubUrl: 'https://github.com/MAYOR-G/LLM-From-Scarch',
   },
   {
     id: 'minigpt',
@@ -175,7 +176,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     techStack: ['Python', 'PyTorch', 'Causal Self-Attention', 'Multi-Head Attention', 'Pre-LayerNorm', 'Autoregressive Sampling'],
     githubUrl: 'https://github.com/MAYOR-G/mini-gpt',
-    articleUrl: '',
+    articleUrl: 'https://mayowaolugbenga.substack.com/p/demystifying-llms-from-first-principles?r=lwi49&utm_campaign=post-expanded-share&utm_medium=web',
   },
   {
     id: 'medbay',
@@ -201,7 +202,7 @@ export const PROJECTS_DATA: Project[] = [
       { label: 'Automation', value: 'Gmail + Calendar' },
     ],
     techStack: ['FastAPI', 'Next.js', 'React', 'LangChain', 'LangGraph', 'Hybrid Search', 'Supabase', 'PostgreSQL', 'Gmail API', 'Google Calendar API', 'Docker'],
-    githubUrl: '',
+    githubUrl: 'https://github.com/MAYOR-G/Medbay',
   },
   {
     id: 'omnisense-ai',
@@ -281,7 +282,7 @@ export const PROJECTS_DATA: Project[] = [
       { label: 'Framework', value: 'PyTorch' },
     ],
     techStack: ['Python', 'PyTorch', 'Pretrained GPT Model', 'Supervised Fine-Tuning', 'Classification Head'],
-    githubUrl: '',
+    githubUrl: 'https://github.com/MAYOR-G/Fine-Tuning-an-LLM-for-Text-Classification',
   },
   {
     id: 'llm-instruction-finetuning',
@@ -306,7 +307,7 @@ export const PROJECTS_DATA: Project[] = [
       { label: 'Loss', value: 'Masked Cross-Entropy' },
     ],
     techStack: ['Python', 'PyTorch', 'Supervised Fine-Tuning (SFT)', 'Prompt Formatting', 'Loss Masking'],
-    githubUrl: '',
+    githubUrl: 'https://github.com/MAYOR-G/Instruction-Fine-Tuning-an-LLM',
   },
   {
     id: 'customer-churn-ml-system',
@@ -332,7 +333,7 @@ export const PROJECTS_DATA: Project[] = [
       { label: 'Serving', value: 'FastAPI · Docker · AWS' },
     ],
     techStack: ['Python', 'Scikit-learn', 'XGBoost', 'MLflow', 'FastAPI', 'Docker', 'AWS (S3, ECR, EC2)', 'GitHub Actions'],
-    githubUrl: '',
+    githubUrl: 'https://github.com/MAYOR-G/End-to-End-ML-Churn-model-with-FastAPI-MLFlow-Docker-AWS',
   },
   {
     id: 'neural-net-from-scratch',
@@ -356,6 +357,7 @@ export const PROJECTS_DATA: Project[] = [
       { label: 'Focus', value: 'Manual Backprop' },
     ],
     techStack: ['Python', 'NumPy', 'PyTorch', 'Linear Algebra', 'Calculus', 'Backpropagation'],
+    githubUrl: 'https://github.com/MAYOR-G/NEURAL-NET',
     extraLinks: [
       { label: 'Python Version', url: '' },
       { label: 'PyTorch Version', url: '' },
@@ -540,6 +542,7 @@ export const EDUCATION_DATA: EducationItem[] = [
     id: 'fupre-math',
     institution: 'Federal University of Petroleum Resources Effurun (FUPRE)',
     degree: 'B.Sc. Mathematics',
+    period: '2019 – 2024',
     details:
       'Rigorous training in mathematical proof, linear operators, probability spaces, and numerical optimization supporting first-principles machine learning.',
     courses: [
@@ -567,7 +570,7 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
     id: 'datacamp-llm-concepts',
     title: 'Large Language Models (LLMs) Concepts',
     issuer: 'DataCamp',
-    credentialUrl: '',
+    credentialUrl: 'https://www.datacamp.com/completed/statement-of-accomplishment/course/9f2449fa6e797628c8418429c0d6a7389786841e',
     status: 'Verified',
     description:
       'Core foundations of large language models, transformer architectures, pretraining, fine-tuning strategies, and ethical deployment considerations.',
@@ -576,7 +579,7 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
     id: 'datacamp-llmops-concepts',
     title: 'LLMOps Concepts',
     issuer: 'DataCamp',
-    credentialUrl: '',
+    credentialUrl: 'https://www.datacamp.com/completed/statement-of-accomplishment/course/685943c50553e0e70dbbce6687e07c4d39e8b3ea',
     status: 'Verified',
     description:
       'Operationalizing LLM applications in production: lifecycle management, evaluation pipelines, latency/cost optimization, and monitoring.',
@@ -585,7 +588,7 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
     id: 'datacamp-rag-langchain',
     title: 'Retrieval Augmented Generation (RAG) with LangChain',
     issuer: 'DataCamp',
-    credentialUrl: '',
+    credentialUrl: 'https://www.datacamp.com/completed/statement-of-accomplishment/course/981e3e1c076f723105a9b504c685b7a3cab39cc8',
     status: 'Verified',
     description:
       'End-to-end RAG pipelines with LangChain covering document loading, splitting, embeddings, vector stores, retrieval tuning, and response evaluation.',
@@ -594,7 +597,7 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
     id: 'datacamp-developing-llm-langchain',
     title: 'Developing LLM Applications with LangChain',
     issuer: 'DataCamp',
-    credentialUrl: '',
+    credentialUrl: 'https://www.datacamp.com/completed/statement-of-accomplishment/course/a16c94e652046ed2d199f4c398e3c0a4ab478dd8',
     status: 'Verified',
     description:
       'Building production LLM applications with LangChain chains, prompt templates, conversational memory, tool use, and structured outputs.',

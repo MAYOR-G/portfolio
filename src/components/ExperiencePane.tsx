@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EXPERIENCE_DATA, EDUCATION_DATA, CERTIFICATIONS_DATA } from '../data/portfolioData';
+import { EXPERIENCE_DATA, EDUCATION_DATA, CERTIFICATIONS_DATA, PROFILE_DATA } from '../data/portfolioData';
 import { CertificateModal } from './CertificateModal';
 import type { CertificationItem } from '../types/portfolio';
 import { playClick } from '../utils/audio';
@@ -26,25 +26,42 @@ export const ExperiencePane: React.FC = () => {
         style={{
           paddingBottom: '20px',
           borderBottom: '1px solid var(--color-border-strong)',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'flex-end',
+          flexWrap: 'wrap',
+          gap: '16px',
         }}
       >
-        <div style={{ fontSize: '11.5px', color: 'var(--color-primary)', fontWeight: 600 }}>
-          $ git log --experience
+        <div>
+          <div style={{ fontSize: '11.5px', color: 'var(--color-primary)', fontWeight: 600 }}>
+            $ git log --experience
+          </div>
+          <h1
+            style={{
+              fontSize: '22px',
+              fontWeight: 700,
+              color: 'var(--color-text-primary)',
+              marginTop: '4px',
+              letterSpacing: '-0.02em',
+            }}
+          >
+            Professional Experience, Education &amp; Certifications
+          </h1>
+          <p style={{ fontSize: '13px', color: 'var(--color-text-secondary)', marginTop: '4px', maxWidth: '72ch' }}>
+            Engineering track record building RAG platforms, LLM applications, full-stack AI systems, and coaching learners in machine learning.
+          </p>
         </div>
-        <h1
-          style={{
-            fontSize: '22px',
-            fontWeight: 700,
-            color: 'var(--color-text-primary)',
-            marginTop: '4px',
-            letterSpacing: '-0.02em',
-          }}
+
+        <a
+          href={PROFILE_DATA.cvUrl}
+          target="_blank"
+          rel="noreferrer"
+          onClick={() => playClick()}
+          className="term-btn"
         >
-          Professional Experience, Education &amp; Certifications
-        </h1>
-        <p style={{ fontSize: '13px', color: 'var(--color-text-secondary)', marginTop: '4px', maxWidth: '72ch' }}>
-          Engineering track record architecting enterprise RAG systems, multimodal AI applications, and production microservices.
-        </p>
+          Download Full CV ↗
+        </a>
       </section>
 
       {/* Open Terminal Career Timeline (Directly on Page, Not Boxed) */}
